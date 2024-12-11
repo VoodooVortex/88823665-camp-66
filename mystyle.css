@@ -1,0 +1,94 @@
+/* mystyle.css */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'kanit';
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    margin: 20px auto;
+    width: 600px;
+    height: 550px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #cccccc,
+        -5px -5px 10px #f4f4f4;
+}
+
+.card:hover {
+    background: #f9f9f9;
+    box-shadow: 10px 10px 30px #cccccc,
+        -10px -10px 30px #f4f4f4;
+}
+
+.border-input {
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.border-input:focus {
+    box-shadow: 5px 5px 10px #cccccc,
+        -5px -5px 10px #f4f4f4;
+    border: 2px solid #62e01e;
+}
+
+.border-input:hover {
+    box-shadow: 6px 6px 11px #cccccc,
+        -6px -6px 11px #f4f4f4;
+}
+
+button:hover {
+    box-shadow: 6px 6px 11px #cccccc,
+        -6px -6px 11px #f4f4f4;
+    border: 1px solid;
+}
+
+button:hover[type="reset"] {
+    background-color: #d01d1d;
+    color: rgb(226, 226, 226);
+    box-shadow: 6px 6px 11px #cccccc,
+        -6px -6px 11px #f4f4f4;
+    border: 1px solid #000000;
+}
+
+button:active[type="reset"] {
+    box-shadow: 5px 5px 10px #cccccc,
+        -5px -5px 10px #f4f4f4;
+    border: 2px solid #ff0000;
+}
+
+button:active {
+    box-shadow: 5px 5px 10px #cccccc,
+        -5px -5px 10px #f4f4f4;
+    border: 2px solid #62e01e;
+}
+
+input[type="checkbox"] {
+    accent-color: #62e01e;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[type="radio"] {
+    accent-color: #62e01e;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
