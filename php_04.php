@@ -39,14 +39,18 @@
         if (empty($start) || empty($end)) {
             echo "<div class='text-center text-danger font-weight-bold'> <b>**กรุณากรอกข้อมูลให้ครบด้วยครับ**</b> </div>";
         } else {
-            echo "<div class='text-center fw-bold mb-2 text-decoration-underline'> {$start} ถึง {$end} </div>";
+            echo "<table class='table table-striped'>";
+            echo "<tr><td class='text-center fw-bold mb-2 text-decoration-underline'> {$start} ถึง {$end} </td></tr>";
             for ($i = $start; $i <= $end; $i++) {
+                echo "<tr>";
                 if ($i % 2 == 0) {
-                    echo "<div class='text-center'> {$i} = Even number </div>";
+                    echo "<td class='d-flex justify-content-center'> {$i} = <p class='text-danger m-0 px-2'>Even number</p> </td>";
                 } else {
-                    echo "<div class='text-center'> {$i} = Odd number </div>";
+                    echo "<td class='d-flex justify-content-center'> {$i} = <pd class='text-primary m-0 px-2'>Odd number</pd> </td>";
                 }
+                echo "</tr>";
             }
+            echo "</table>";
         }
     }
     ?>

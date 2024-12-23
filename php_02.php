@@ -17,9 +17,9 @@
     </div>
 
     <?php
-    echo "<table class='table table-bordered'>";
+    echo "<table class='table table-bordered table-striped'>";
     for ($i = 1; $i <= 100; $i++) {
-        echo ($i % 2 == 0) ? "<tr><td><div class='text-center'> {$i} = Even number </div></td></tr>" : "<tr><td><div class='text-center'> {$i} = Odd number </div></td></tr>";
+        echo ($i % 2 == 0) ? "<tr><td><div class='d-flex justify-content-center'> {$i} = <p class='text-danger m-0 px-2'>Even number</p> </div></td></tr>" : "<tr><td><div class='d-flex justify-content-center'> {$i} = <p class='text-primary px-2 m-0'>Odd number</p> </div></td></tr>";
     }
     echo "</table>";
     ?>

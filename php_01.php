@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        <table class="table table-bordered">
+        <table class="table table-bordered table-striped">
             <tr>
                 <th colspan="13">
                     <div class="text-center">สูตรคูณแม่ 2</div>

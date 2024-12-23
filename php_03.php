@@ -34,10 +34,14 @@
         if (empty($multi)) {
             echo "<div class='text-center text-danger font-weight-bold'> <b>**กรุณากรอกข้อมูลด้วยครับ**</b> </div>";
         } else {
-            echo "<div class='text-center fw-bold mb-2 text-decoration-underline'> สูตรคูณแม่ {$multi} </div>";
+            echo "<table class='table table-striped'>";
+            echo "<tr><td class='text-center fw-bold mb-2 text-decoration-underline'> สูตรคูณแม่ {$multi} </td></tr>";
             for ($i = 1; $i < 13; $i++) {
-                echo "<div class='text-center'> {$multi} x {$i} = " . ($i * $multi) . "</div>";
+                echo "<tr>";
+                echo "<td class='text-center'> {$multi} x {$i} = " . ($i * $multi) . "</td>";
+                echo "</tr>";
             }
+            echo "</table>";
         }
     }
     ?>
