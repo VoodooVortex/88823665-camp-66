@@ -36,7 +36,7 @@
                             <div class="input-group-text"><span class="bi bi-lock-fill"></span></div>
                         </div>
                         <!--begin::Row-->
-                        <div class="row">
+                        <div class="row my-3">
                             <div class="col-8 d-inline-flex align-items-center">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
@@ -55,18 +55,9 @@
                         </div>
                         <!--end::Row-->
                     </form>
-                    <div class="social-auth-links text-center mb-3 d-grid gap-2">
-                        <p>- OR -</p>
-                        <a href="#" class="btn btn-primary">
-                            <i class="bi bi-facebook me-2"></i> Sign in using Facebook
-                        </a>
-                        <a href="#" class="btn btn-danger">
-                            <i class="bi bi-google me-2"></i> Sign in using Google+
-                        </a>
-                    </div>
-                    <!-- /.social-auth-links -->
+
                     <p class="mb-0">
-                        <a href="login.html" class="link-primary text-center"> I already have a membership </a>
+                        <a href="{{ url('login') }}" class="link-primary text-center"> I already have a membership </a>
                     </p>
                 </div>
                 <!-- /.register-card-body -->
