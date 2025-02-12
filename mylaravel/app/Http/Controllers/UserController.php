@@ -27,13 +27,13 @@ class UserController extends Controller
         $muser->email = $req->email;
         $muser->password = $req->password;
         $muser->save();
-        return redirect('/user');
+        return redirect('/users');
     }
 
     function delete_user(Request $req)
     {
         $muser = User::find($req->id);
         $muser->delete();
-        return redirect('/user');
+        return redirect('/users');
     }
 }

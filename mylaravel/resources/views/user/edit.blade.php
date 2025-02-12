@@ -42,15 +42,7 @@
                             <div class="input-group-text"><span class="bi bi-lock-fill"></span></div>
                         </div>
                         <!--begin::Row-->
-                        <div class="row my-3">
-                            <div class="col-8 d-inline-flex align-items-center">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        I agree to the <a href="#">terms</a>
-                                    </label>
-                                </div>
-                            </div>
+                        <div class="row my-3 justify-content-center">
                             <!-- /.col -->
                             <div class="col-4">
                                 <div class="d-grid gap-2">

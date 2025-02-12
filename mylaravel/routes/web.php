@@ -24,7 +24,7 @@ Route::post(
 );
 
 Route::get(
-    '/user',
+    '/users',
     [UserController::class, 'index']
 );
 

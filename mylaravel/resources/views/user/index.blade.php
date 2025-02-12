@@ -25,8 +25,9 @@
                                     <td>{{ $i->name }}</td>
                                     <td>{{ $i->email }}</td>
                                     <td>
-                                        <a href="{{ url('/user/' . $i->id) }}" class="btn btn-primary">Edit</a>
-                                        <form action="{{ url('user') }}" class="d-inline-flex" method="POST">
+                                        <a href="{{ url('/user/' . $i->id) }}" class="btn btn-warning">Edit</a>
+                                        <form action="{{ url('user') }}" class="d-inline-flex"
+                                            onsubmit="return confirm_delete(event)" method="POST">
                                             @csrf
                                             @method('delete')
                                             <input type="hidden" name="id" value="{{ $i->id }}">
@@ -35,7 +36,6 @@
                                     </td>
                                 </tr>
                             @endforeach
-
                         </tbody>
                     </table>
                 </div>
@@ -53,4 +53,30 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script>
+        confirm_delete = async (event) => {
+            event.preventDefault();
+            let result = await Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+            })
+
+            if (result.isConfirmed) {
+                await Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+                event.target.submit();
+            }
+        }
+    </script>
 @endsection
