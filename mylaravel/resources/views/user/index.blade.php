@@ -1,6 +1,7 @@
 @extends('layouts.default_menu')
 
 @section('content')
+    <h1>{{ session('user')->name }}</h1>
     <div class="row">
         <div class="col-md-12">
             <div class="card mb-12">
@@ -9,6 +10,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
+
                     <table class="table table-bordered">
                         <thead>
                             <tr>
