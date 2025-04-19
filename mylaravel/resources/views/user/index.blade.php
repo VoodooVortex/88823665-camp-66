@@ -21,7 +21,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($users as $i)
+                            <tr>
+                                {{ $pk }}
+                            </tr>
+                            @foreach ($pk as $i)
                                 <tr class="align-middle">
                                     <td>{{ $loop->iteration }}.</td>
                                     <td>{{ $i->name }}</td>

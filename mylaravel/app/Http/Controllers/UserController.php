@@ -11,7 +11,7 @@ class UserController extends Controller
     function index()
     {
         $users = User::all();
-        return view('user.index', ['users' => $users]);
+        return view('user.index', ['pk' => $users]);
     }
 
     function edit($id)
